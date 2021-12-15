@@ -1,7 +1,30 @@
-POST http://localhost:3000/api/auth/register 
+POST http://localhost:5000/api/auth/register
 Content-Type: application/json
 
 {
-"email": "Jant@Doe.com",
+"email": "Jane@Doe.com",
 "password" : "123456"
+}
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+"email": "Jane@Doe.com",
+"password" : "123456"
+}
+
+#####
+
+POST http://localhost:5000/api/auth/listings
+Content-Type: application/json
+
+{
+"title": "Snack",
+"body" : "Snack",
+"price": "2.99",
+"image": "https://www.imgacademy.com/themes/custom/imgacademy/images/helpbox-contact.jpg",
+"userId": "1"
 }

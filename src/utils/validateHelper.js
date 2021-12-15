@@ -22,7 +22,7 @@ async function validateRegister(req, res, next) {
   }
 }
 
-async function validateNewPost(req, res, next) {}
+// async function validateNewPost(req, res, next) {}
 
 /* 
 {
