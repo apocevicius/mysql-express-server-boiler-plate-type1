@@ -4,4 +4,4 @@ DB_PASSWORD=your data
 DB_PORT=your data
 DB_DB=your data
 
-SERVER_PORT=your server port
+PORT=your server port

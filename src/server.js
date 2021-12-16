@@ -20,7 +20,7 @@ const upload = multer({ storage: storage });
 // const mysql = require('mysql2/promise');
 // const dbConfig = require('./dbConfig');
 
-const PORT = process.env.SERVER_PORT || 3000;
+const PORT = process.env.SERVER_PORT || 5000;
 
 const app = express();
 
@@ -47,13 +47,10 @@ app.post('/api/new-listing', upload.single('mainImage'), (req, res) => {
 // Routes import
 // const sampleRoutes = require('./routes/v1/sampleRoute');
 const userRoutes = require('./routes/v1/users');
-const listingsRoutes = require('./routes/v1/listings')
+const listingsRoutes = require('./routes/v1/listings');
 
 // Use Routes
 app.use('/', userRoutes);
-app.use('/api/auth/listings', listingsRoutes)
+app.use('/api/auth/listings', listingsRoutes);
 
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
-
-
-
