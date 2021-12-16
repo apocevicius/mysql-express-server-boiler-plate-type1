@@ -1,6 +1,6 @@
 const { dbFail } = require('./dbHelper');
 const jwt = require('jsonwebtoken');
-const { jwtSecret } = require('../config');
+const { jwtSecret } = require('../dbConfig');
 
 function showBody(req, res, next) {
   if (req.method === 'POST') {
